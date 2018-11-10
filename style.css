@@ -1,9 +1,13 @@
 .center 
 {
 position: absolute;
-top: 1%;
-left: 96%;
+top: 0%;
+left: 15%;
 
-margin-left: 10x; 	
-margin-top: 10px;	
+margin-left: 12x; 	
+margin-top: 6px;
+
+width: 40px;
+height: 40px;
+	
 }
