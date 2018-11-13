@@ -1,31 +1,176 @@
----
-layout: null
-permalink: /feed/
----
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>{{ site.title | xml_escape }}</title>
-    <description>{{ site.description | xml_escape }}</description>
-    <link>{{ site.url }}{{ site.baseurl }}/</link>
-    <atom:link href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" rel="self" type="application/rss+xml" />
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
-      <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
-        <category>{{ tag | xml_escape }}</category>
-        {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
-        {% endfor %}
-      </item>
-    {% endfor %}
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.3">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2018-11-13T23:52:44+01:00</updated><id>/</id><title type="html">Belkirk College of Engineering</title><subtitle>Belkirk Demo Site for Forestry.io</subtitle><entry><title type="html">Example Draft</title><link href="/2018-01-19-example-draft/" rel="alternate" type="text/html" title="Example Draft" /><published>2018-01-19T01:00:00+01:00</published><updated>2018-01-19T01:00:00+01:00</updated><id>/example-draft</id><content type="html" xml:base="/2018-01-19-example-draft/">&lt;h2 id=&quot;what-are-draft-posts&quot;&gt;What are draft posts?&lt;/h2&gt;
+
+&lt;p&gt;This is an example of a draft post. Draft posts aren’t included when publishing your site.&lt;/p&gt;
+
+&lt;p&gt;This is great for authoring work in progress content, or hiding content that shouldn’t be available at the current time.&lt;/p&gt;</content><author><name></name></author><summary type="html">What are draft posts?</summary></entry><entry><title type="html">Welcome to the Forestry Demo Site!</title><link href="/2017-09-25-introduction/" rel="alternate" type="text/html" title="Welcome to the Forestry Demo Site!" /><published>2017-09-25T11:09:13+02:00</published><updated>2017-09-25T11:09:13+02:00</updated><id>/introduction</id><content type="html" xml:base="/2017-09-25-introduction/">&lt;ul&gt;
+  &lt;li&gt;Header 1&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Header 1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/2017/11/13/CNODES-logo-lg.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Welcome to the Belkirk College of Engineering Demo Site!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This site allows you to explore Forestry’s features and functionality, and is &lt;strong&gt;not&lt;/strong&gt; meant to be used as a production website. To get started building your own site, please see our &lt;a href=&quot;https://forestry.io/docs/&quot; title=&quot;Docs&quot;&gt;documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thank you for choosing to demo Forestry!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Code block&lt;/code&gt;&lt;/p&gt;
+
+    &lt;p&gt;CtrlAlt0&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Divider&lt;/p&gt;
+
+    &lt;p&gt;CtrlEnter&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Undo&lt;/p&gt;
+
+    &lt;p&gt;CtrlZ&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Redo&lt;/p&gt;
+
+    &lt;p&gt;CtrlShiftZ&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Indent&lt;/p&gt;
+
+    &lt;p&gt;Tab&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Unindent&lt;/p&gt;
+
+    &lt;p&gt;ShiftTab&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;New Line&lt;/p&gt;
+
+    &lt;p&gt;ShiftEnter&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Media Library&lt;/p&gt;
+
+    &lt;p&gt;CtrlShiftU&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Preview&lt;/p&gt;
+
+    &lt;p&gt;CtrlShiftJ&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="Demo" /><category term="Forestry" /><summary type="html">Header 1</summary></entry><entry><title type="html">Modern Engineering 2nd Edition</title><link href="/2017-02-12-modern/" rel="alternate" type="text/html" title="Modern Engineering 2nd Edition" /><published>2017-09-25T11:09:13+02:00</published><updated>2017-09-25T11:09:13+02:00</updated><id>/modern</id><content type="html" xml:base="/2017-02-12-modern/">&lt;p&gt;&lt;strong&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;1&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;</content><author><name></name></author><summary type="html">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</summary></entry><entry><title type="html">New Research Centre</title><link href="/2017-08-22-research/" rel="alternate" type="text/html" title="New Research Centre" /><published>2017-08-22T11:09:13+02:00</published><updated>2017-08-22T11:09:13+02:00</updated><id>/research</id><content type="html" xml:base="/2017-08-22-research/">&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;p&gt;Header 1&lt;/p&gt;
+
+      &lt;p&gt;#Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Header 2&lt;/p&gt;
+
+      &lt;p&gt;##Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Header 3&lt;/p&gt;
+
+      &lt;p&gt;###Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Header 4&lt;/p&gt;
+
+      &lt;p&gt;####Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Header 5&lt;/p&gt;
+
+      &lt;p&gt;#####Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Header 6&lt;/p&gt;
+
+      &lt;p&gt;######Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Numbered list&lt;/p&gt;
+
+      &lt;p&gt;1.Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Bulleted list&lt;/p&gt;
+
+      &lt;p&gt;*Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Blockquote&lt;/p&gt;
+
+      &lt;blockquote&gt;
+        &lt;p&gt;Space&lt;/p&gt;
+      &lt;/blockquote&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;&lt;strong&gt;Bold&lt;/strong&gt;&lt;/p&gt;
+
+      &lt;p&gt;**bold**&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;&lt;em&gt;Italic&lt;/em&gt;&lt;/p&gt;
+
+      &lt;p&gt;&lt;em&gt;italic&lt;/em&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;&lt;del&gt;Strike&lt;/del&gt;&lt;/p&gt;
+
+      &lt;p&gt;~~strike~~&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Code block&lt;/code&gt;&lt;/p&gt;
+
+      &lt;p&gt;```Space&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Code&lt;/code&gt;&lt;/p&gt;
+
+      &lt;p&gt;`code`&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Divider&lt;/p&gt;
+
+      &lt;p&gt;-–&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;p&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. &lt;strong&gt;&lt;em&gt;Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.&lt;/em&gt;&lt;/strong&gt; Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+&lt;/blockquote&gt;</content><author><name></name></author><summary type="html">Header 1 #Space Header 2 ##Space Header 3 ###Space Header 4 ####Space Header 5 #####Space Header 6 ######Space Numbered list 1.Space Bulleted list *Space Blockquote Space Bold **bold** Italic italic Strike ~~strike~~ Code block ```Space Code `code` Divider -– Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</summary></entry><entry><title type="html">New Industry Partner</title><link href="/2017-08-01-welcome/" rel="alternate" type="text/html" title="New Industry Partner" /><published>2017-08-01T11:09:13+02:00</published><updated>2017-08-01T11:09:13+02:00</updated><id>/welcome</id><content type="html" xml:base="/2017-08-01-welcome/">&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="Partnerships" /><summary type="html">Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod.</summary></entry></feed>
