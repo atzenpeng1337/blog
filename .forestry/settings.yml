@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: administratorpfad
-webhook_url: 
+webhook_url: ie. post_import, post_publish
 sections:
 - type: jekyll-pages
   label: Pages
