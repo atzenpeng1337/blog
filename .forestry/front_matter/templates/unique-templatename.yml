@@ -7,7 +7,7 @@ fields:
 - type: color
   config:
     color_format: RGB
-  default: "#C7F81C"
+  default: rgb(28, 248, 102)
   label: human-friendly-label
   name: human-friendly-label
   description: awesome description
