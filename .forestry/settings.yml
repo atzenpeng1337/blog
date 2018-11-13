@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: administrator1337
+admin_path: administratorpfad
 webhook_url: 
 sections:
 - type: jekyll-pages
